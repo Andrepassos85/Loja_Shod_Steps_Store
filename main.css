@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PT Serif", serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container img {
+    max-width: 400px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header,
+.produtos h1 {
+    padding: 16px 0 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 56px;
+}
+
+header .menu {
+    display: flex;
+    align-items: center;
+}
+
+header .menu li {
+    position: relative;
+}
+
+header .menu li:hover .submenu {
+    display: block;
+}
+
+header .menu li:hover {
+    background-color: #fff;
+}
+
+header .menu li:hover > a {
+    color: #0088cc;
+}
+
+header .menu a {
+    display: block;
+    padding: 16px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+header .menu .submenu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+header .menu .submenu li {
+    border-bottom: 1px solid #ccc;
+}
+
+header .menu .submenu li:last-child {
+    border-bottom: none;
+}
+
+header .menu .submenu li a {
+    color: #000;
+    font-size: 14px;
+}
+
+header .menu .submenu li a:hover {
+    color: #0088cc;
+}
+
+header .menu .submenu .submenu {
+    left: 100%;
+    top: 0;
+    width: 200px;
+}
+
+header .menu .submenu .submenu li {
+    border: none;
+}
+
+
+.submenu {
+    margin-left: auto;
+    border-bottom: none;
+}
+
+.submenu li {
+    border-bottom: none;
+}
+
+.menu li:hover .submenu {
+    display: block;
+    background-color: #fff;
+}
+
+.produtos h1 {
+    border-bottom: none;
+}
+
+
+.submenu {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 300px;
+    top: 100%;
+}
+
+.produtos h1 {
+    margin-left: 35px;
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+.menu>li {
+    float: left;
+    list-style: none;
+    padding: 16px;
+    position: relative;
+}
+
+.clear {
+    clear: both;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    display: block;
+    padding: 8px;
+}
+
+button {
+    background-color: #0088cc;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #0088cc;
+}
+
+#section .loja {
+    display: flex;
+}
+
+.loja {
+    display: flex;
+    align-items: center;
+}
+
+.loja img {
+    max-width: 400PX;
+    margin-right: 2rem;
+    align-items: center;
+}
+
+.loja div {
+    flex: 1;
+}
+
+.loja h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.loja p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.produtos {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.produtos h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.produtos-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.produto {
+    width: calc(25% - 40px);
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+}
+
+.produto h4 {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.produto button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+input[type="search"] {
+    height: 32px;
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        display: block;
+        max-width: 90%;
+    }
+
+    .produtos-container {
+        display: block;
+    }
+
+    .produto {
+        width: calc(50% - 20px);
+        margin: 20px auto;
+    }
+
+    .produto img {
+        max-width: 100%;
+    }
+
+    .loja {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .loja img {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .loja div {
+        text-align: center;
+    }
+
+    .produtos h1 {
+        font-size: 1.5em;
+    }
+
+    .submenu {
+        margin-left: auto;
+        border-bottom: none;
+    }
+    
+    .submenu li {
+        border-bottom: none;
+    }
+    
+    .menu li:hover .submenu {
+        display: block;
+        background-color: #fff;
+    }
+    
+    .produtos h1 {
+        border-bottom: none;
+    }
+
+    .menu li:hover .submenu {
+        display: block;
+        background-color: #fff;
+    }
+    .menu li, .produtos h1 {
+        border-bottom: none;
+    }
+    
+}
